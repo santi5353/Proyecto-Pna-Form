@@ -1,0 +1,101 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//-------------------- sombra de nav  -----------------------
+body{
+    padding: 0% !important;
+    position: relative;
+    padding-bottom: 15em !important;
+    min-height: 100vh;
+}
+.footer {
+    width: 70px;
+    height: 100px;
+    bottom: 0%;
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+.shadow {
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 16%)!important;
+}
+
+//------------------style paso1------------------------
+.contains {
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 0px 110px 40px;
+    margin-top: 0px;
+    height: 100%;
+    min-height: 100vh;
+    margin-bottom: 0px;
+}
+
+.contains1 {
+    font-size: 13px;
+    color: #38485C;
+    text-transform: uppercase;
+    font-family: 'Open sans', sans-serif;
+    
+}
+.contains2 {
+    font-size: 24px;
+    color: #38485C;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contains3{
+    font-size: 16px;
+    color: #38485C;
+    font-family: 'Open sans', sans-serif;
+    text-align: right;
+    position: relative;
+    top: -30px;
+}
+
+
+.linea1{
+    margin-top: -20px;
+    border-top: 1px solid #38485C;
+}
+
+
+//-------------------style form control-----------------
+form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+ 
+//-------------------style de select--------------
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='rgb(58 71 89)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 6px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+    background-size: 30px;
+}
+
+//-----------------linea de tiempo de formulario ---------------------
+
