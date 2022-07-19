@@ -91,9 +91,7 @@
                                                                         <div class="modal-footer"> <button type="button"
                                                                                 class="btn btn-secondary"
                                                                                 data-bs-dismiss="modal">Cerrar</button>
-                                                                            <button type="button"
-                                                                                class="btn btn-primary"
-                                                                                data-bs-dismiss="modal">Continuar</button>
+                                                                            
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -108,7 +106,7 @@
                                                                     <div class="modal-content">
                                                                         <div class="modal-header">
                                                                             <h5 class="modal-title" id="modalTitle">
-                                                                                Escuela de Suboficilaes</h5>
+                                                                                Escuela de Suboficiales</h5>
                                                                         </div>
                                                                         <div class="modal-body">
                                                                             <p>Ingreso como Aspirante a cabo segundo
@@ -117,9 +115,7 @@
                                                                         <div class="modal-footer"> <button type="button"
                                                                                 class="btn btn-secondary"
                                                                                 data-bs-dismiss="modal">Cerrar</button>
-                                                                            <button type="button"
-                                                                                class="btn btn-primary"
-                                                                                data-bs-dismiss="modal">Continuar</button>
+                                                                            
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -170,6 +166,7 @@
                                                                     <label>País de nacimiento (*)</label> <select
                                                                         id="nacionalidad" name="nacionalidad"
                                                                         class="required form-control">
+                                                                        <option value="">Seleccionar</option>
                                                                         <option value="1">Argentina</option>
                                                                         <option value="18">Afghanistán</option>
                                                                         <option value="25">Alemania</option>
@@ -263,7 +260,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            
+
                                                             <div class="col-md-3">
                                                                 <div class="form-group">
                                                                     <label for="">Estado civil(*)</label>
@@ -282,88 +279,111 @@
                                                                 <div class="form-group ">
                                                                     <label for="">Grupo sanguineo(*)</label>
                                                                     <select id="" class="required form-control error">
-                                                                        <option value="">Selecionar</option>
+                                                                        <option value="">Seleccionar</option>
                                                                         <option value="01">A+</option>
                                                                         <option value="02">A-</option>
                                                                         <option value="03">B+</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
-                                                            
-                                                            <div class="col-md-4">
+
+                                                            <div class="form-group col-12 col-md-4">
+                                                                <label for="raza-mascota">Identidad de Genero</label>
+                                                                <select data-toggle="tooltip" data-placement="bottom"
+                                                                    title="Este campo es obligatorio"
+                                                                    class="form-control" id="razaMascotaRegistra"
+                                                                    onchange="GeneroOtro()">
+                                                                    <option value="">Seleccionar</option>
+                                                                    <option value="1">Varon</option>
+                                                                    <option value="2">Mujer</option>
+                                                                    <option value="3">Varon trans</option>
+                                                                    <option value="4">Mujer trans</option>
+                                                                    <option value="5">Travesti</option>
+                                                                    <option value="6">Sin determinar</option>
+                                                                    <option value="7">Otro</option>
+                                                                </select>
+                                                            </div>
+                                                            <div id="razaOtroMascotaRegistra" style="display: none">
+                                                                <div class="form-group col-12 col-md-8 ">
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="* Especifica tu genero" />
+                                                                </div>
+                                                            </div>
+                                                            <!-- <div class="col-md-4"> 
                                                                 <div class="form-group">
-                                                                    <label>Identidad de genero()</label>
-                                                                    <select id="sexo" name="sexo"
-                                                                        class="required form-control valid">
+                                                                    <label>Identidad de genero(*)</label>
+                                                                    <select id="genero" name="sexo"
+                                                                        class="required form-control valid" onchange="mostarR()">
                                                                         <option value="">Seleccionar</option>
                                                                         <option value="1">Varon </option>
                                                                         <option value="2">Mujer</option>
                                                                         <option value="3">Varon trans</option>
                                                                         <option value="4">Mujer trans</option>
                                                                         <option value="5">Otro</option>
+                                                                        <textarea  style="display: none;"   name="" id="otro" cols="20" rows="1"></textarea>
                                                                     </select>
-                                                                </div>
-                                                            </div>
-
-                                                            <label style="clear:none; display:inline-block" for="">
-                                                                <b> Contacto de emergencia</b></label><br><br>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group ">
-                                                                    <label for="">Telefono de contacto(*)</label>
-                                                                    <input type="text" id="Ciudad" name="Ciudad"
-                                                                     class="required form-control" value="">
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="form-group ">
-                                                                    <label for="">Parentesco(*)</label>
-                                                                    <select id="" class="required form-control error">
-                                                                        <option value="">Selecionar</option>
-                                                                        <option value="01">Padre</option>
-                                                                        <option value="02">Madre</option>
-                                                                        <option value="03">Tio/a</option>
-                                                                        <option value="04">hermano/a</option>
-                                                                        <option value="05">otro</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-
-
+                                                                </div>-->
                                                         </div>
 
+                                                        <label style="clear:none; display:inline-block" for="">
+                                                            <b> Contacto de emergencia</b></label><br><br>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group ">
+                                                                <label for="">Telefono de contacto(*)</label>
+                                                                <input type="text" id="Ciudad" name="Ciudad"
+                                                                    class="required form-control" value="">
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group ">
+                                                                <label for="">Parentesco(*)</label>
+                                                                <select id="" class="required form-control error">
+                                                                    <option value="">Seleccionar</option>
+                                                                    <option value="01">Padre</option>
+                                                                    <option value="02">Madre</option>
+                                                                    <option value="03">Tio/a</option>
+                                                                    <option value="04">hermano/a</option>
+                                                                    <option value="05">otro</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
                                                     </div>
+
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
+
                                 </div>
-
-
                             </div>
+
 
                         </div>
 
                     </div>
+
                 </div>
-                <div class="row mt-5">
-                    <div class="col-md-6 col-6">
-                        <a onclick="" class="btn btn-lg btn-secondary" data-bs-toggle="modal"
-                            data-bs-target="#miModal"><i class="fa fa-times d-block d-sm-none"></i><span
-                                class="d-none d-sm-block ml-2"> Cancelar carga</span></a>
-                    </div>
-                    <div class="col-md-6 col-6 text-right">
-                        <a class="btn btn-lg btn-secondary backBtn mr-2"><i
-                                class="fa fa-chevron-left d-block d-sm-none"></i><span class="d-none d-sm-block ml-2">
-                                Volver</span></a>
-                        <a class="btn btn-lg btn-primary nextBtn"><i
-                                class="fa fa-chevron-right d-block d-sm-none"></i><span class="d-none d-sm-block ml-2">
-                                Siguiente</span></a>
-                    </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-6">
+                    <a onclick="" class="btn btn-lg btn-secondary" data-bs-toggle="modal" data-bs-target="#miModal"><i
+                            class="fa fa-times d-block d-sm-none"></i><span class="d-none d-sm-block ml-2"> Cancelar
+                            carga</span></a>
+                </div>
+                <div class="col-md-6 col-6 text-right">
+                    <a class="btn btn-lg btn-secondary backBtn mr-2"><i
+                            class="fa fa-chevron-left d-block d-sm-none"></i><span class="d-none d-sm-block ml-2">
+                            Volver</span></a>
+                    <a class="btn btn-lg btn-primary nextBtn"><i class="fa fa-chevron-right d-block d-sm-none"></i><span
+                            class="d-none d-sm-block ml-2">
+                            Siguiente</span></a>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     </div>
     </div>
@@ -383,6 +403,27 @@
 
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        function GeneroOtro() {
+
+            let valor = document.getElementById('razaMascotaRegistra').value; //obtenemos el valor del select
+
+            console.log(valor);
+
+            if (valor == 7) { // si es igual a 4 que significa "otro"
+
+                document.getElementById('razaOtroMascotaRegistra').style.display = 'block'; //mostramos el id que contiene el input
+
+            } else {
+
+                document.getElementById('razaOtroMascotaRegistra').style.display = 'none';//si no lo volvemos a ocultar
+
+            }
+
+        }
+    </script>
+
+
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (() => {
