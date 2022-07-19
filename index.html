@@ -29,8 +29,58 @@
     <div class="container mt-5">
         <div class="mt-5">
         <div class="row">
-            <!-- -------------------------------- LOGIN ------------------------------- -->
-            <form id="loginForm" class="col-md-4 mt-5 needs-validation" novalidate name="loginForm" method="POST" action="/registro/login">
+         
+                 <!-- ----------------------card registro -------------------------- -->
+            <form id="registerForm" name="registerForm" method="POST" class="col-md-8  mt-5 needs-validation" novalidate action="/registro/registrar">
+                <div class="card mt-4">
+                    <div class="card-body mb-2">
+                        <h3 class="font-weight-normal">Registrate</h3>
+                        <h6>Completá con los datos solicitados para poder ingresar</h6>
+                        <hr>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group nombreSpan">
+                                    <label for="nombre">DNI*</label>
+                                    <input type="text" class="form-control nombreApellido" id="nombre" name="nombre" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="apellido">N° de tramite*</label>
+                                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group spanMailRegister">
+                                    <label for="email2">Correo electrónico*</label>
+                                    <input type="text" id="email2" class="form-control emailJuntos emailPropioJuntos" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group spanMailRegister">
+                                    <label for="email_rep">Repetí tu Correo electrónico*</label>
+                                    <input type="text" id="email_rep" class="form-control" name="email_rep" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 lg-mb-2 md-mb">
+                            <div class="col-md-7 mt-1">
+                                <input type="checkbox" name="tyc" id="tyc" style="margin-top:0px;margin-right: 10px;">
+                                <p class="small" style="display: inline-block">Acepto los <a href="home/tyc"
+                                        target="blank">términos y condiciones </a></p>
+                            </div>
+                            <div class="col-md-5 text-right">
+                                <button class="btn btn-primary" type="submit">Registrate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+               <!-- -------------------------------- LOGIN ------------------------------- -->
+               <form id="loginForm" class="col-md-4 mt-5 needs-validation" novalidate name="loginForm" method="POST" action="/registro/login">
                 <div class="card mt-4">
                     <div class="card-body pb-2">
                         <h3 class="font-weight-normal">Ingresá</h3>
@@ -98,55 +148,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
-                 <!-- ----------------------card registro -------------------------- -->
-            <form id="registerForm" name="registerForm" method="POST" class="col-md-8  mt-5 needs-validation" novalidate action="/registro/registrar">
-                <div class="card mt-4">
-                    <div class="card-body mb-2">
-                        <h3 class="font-weight-normal">Registrate</h3>
-                        <h6>Completá con los datos solicitados para poder ingresar</h6>
-                        <hr>
-                        <div class="row mt-3">
-                            <div class="col-md-6">
-                                <div class="form-group nombreSpan">
-                                    <label for="nombre">DNI*</label>
-                                    <input type="text" class="form-control nombreApellido" id="nombre" name="nombre" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="apellido">N° de tramite*</label>
-                                    <input type="text" class="form-control" id="apellido" name="apellido" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group spanMailRegister">
-                                    <label for="email2">Correo electrónico*</label>
-                                    <input type="text" id="email2" class="form-control emailJuntos emailPropioJuntos" name="email" required>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group spanMailRegister">
-                                    <label for="email_rep">Repetí tu Correo electrónico*</label>
-                                    <input type="text" id="email_rep" class="form-control" name="email_rep" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-3 lg-mb-2 md-mb">
-                            <div class="col-md-7 mt-1">
-                                <input type="checkbox" name="tyc" id="tyc" style="margin-top:0px;margin-right: 10px;">
-                                <p class="small" style="display: inline-block">Acepto la <a href="home/tyc"
-                                        target="blank">política de privacidad - aviso legal </a></p>
-                            </div>
-                            <div class="col-md-5 text-right">
-                                <button class="btn btn-primary" type="submit">Registrate</button>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </form>
         </div>
