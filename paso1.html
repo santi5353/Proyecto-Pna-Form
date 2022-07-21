@@ -127,7 +127,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-2">
-                                                        <select id="anio_nacimiento"
+                                                        <select id="año_nacimiento"
                                                             class="required form-control error">
                                                             <option value="">Año</option>
                                                             <option value="2023">2023</option>
@@ -293,7 +293,7 @@
                                                         <label>País de nacimiento (*)</label> <select id="nacionalidad"
                                                             name="nacionalidad" class="required form-control">
                                                             <option value="1">Argentina</option>
-                                                            <option value="18">Afghanistán</option>
+                                                            <!-- <option value="18">Afghanistán</option>
                                                             <option value="25">Alemania</option>
                                                             <option value="19">Algeria</option>
                                                             <option value="20">Armenia</option>
@@ -321,7 +321,7 @@
                                                             <option value="31">Ucrania</option>
                                                             <option value="9">Uruguay</option>
                                                             <option value="10">Venezuela</option>
-                                                            <option value="17">Otros</option>
+                                                            <option value="17">Otros</option> -->
                                                         </select>
                                                         <div class="col-md-4">
                                                             <div class="form-group">
@@ -438,27 +438,8 @@
 
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (() => {
-            'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-    </script>
+    <script src="/js/animacionesForm.js"></script>
+    <script src="/js/validacionesBs.js"></script>
     <script src="https://kit.fontawesome.com/ce9d34baf0.js" crossorigin="anonymous"></script>
 </body>
 
