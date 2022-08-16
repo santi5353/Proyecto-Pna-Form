@@ -26,149 +26,315 @@
     <div id="circulo">
 
     </div>
-    <div class="container mt-5">
+    <div class="container  mt-5 ">
         <div class="mt-5">
-            <div class="row">        
+            <div class="row">
                 <!-- ----------------------card registro -------------------------- -->
-                <form id="registerForm" name="registerForm" method="POST" class="col-md-8  mt-5 needs-validation"
-                    novalidate action="">
-                    <div class="card mt-4">
+                <form id="registerForm" name="registerForm" method="POST"
+                    class="col-md-8  mt-5 mx-auto  needs-validation" novalidate action="">
+                    <div class="card mt-4 mx-auto">
                         <div class="card-body mb-2">
                             <h3 class="font-weight-normal">Registrate</h3>
                             <h6>Completá con los datos solicitados para poder ingresar</h6>
                             <hr>
                             <div class="row mt-3">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group nombreSpan">
-                                        <label for="nombre">DNI*</label>
-                                        <input type="text" class="form-control nombreApellido" id="nombre" name="nombre"required>
+                                        <label for="Dni">DNI*</label>
+                                        <input type="text" class="form-control " id="dni" name="dni"
+                                            required placeholder="Número de documento">
                                         <div class="valid-feedback">Ok</div>
                                         <div class="invalid-feedback">Ingrese su DNI</div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="apellido">N° de tramite*</label>
-                                        <input type="text" class="form-control" id="apellido" name="apellido" required>
+                                        <label for="nTramite">N° de tramite*</label>
+                                        <input type="text" class="form-control" id="numTramite" name="numTramite" required placeholder="N° de tramite del Dni">
                                         <div class="valid-feedback">Ok</div>
                                         <div class="invalid-feedback">Ingrese su numero de tramite del DNI</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="ejemplar">Ejemplar*</label>
+                                        <input type="text" class="form-control" id="ejemplar" name="ejemplar" required placeholder="Ejemplar del DNI">
+                                        <div class="valid-feedback">Ok</div>
+                                        <div class="invalid-feedback">Ingrese numero de tramite del Dni</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-group spanMailRegister">
-                                        <label for="email2">Correo electrónico*</label>
-                                        <input type="text" id="email2"
-                                            class="form-control emailJuntos emailPropioJuntos" name="email" required>
-                                            <div class="valid-feedback">Ok</div>
-                                            <div class="invalid-feedback">Ingrese su correo electronico</div> 
+                                    <div class="form-group">
+                                        <label for="apellido">Apellido</label>
+                                        <input type="text" class="form-control" id="apellido" name="apellido" required placeholder="Apellido">
+                                        <div class="valid-feedback">Ok</div>
+                                        <div class="invalid-feedback">Ingrese su Apellido</div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group spanMailRegister">
-                                        <label for="email_rep">Repetí tu Correo electrónico*</label>
-                                        <input type="text" id="email_rep" class="form-control" name="email_rep"
-                                            required>
-                                            <div class="valid-feedback">Ok</div>
-                                            <div class="invalid-feedback">Ingrese su correo electronico</div>
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Nombre">
+                                        <div class="valid-feedback">Ok</div>
+                                        <div class="invalid-feedback">Ingrese su Nombre</div>
                                     </div>
                                 </div>
+
                             </div>
-                            <div class="row mt-3 lg-mb-2 md-mb">
-                                <div class="col-md-7 mt-1">
-                                    <input type="checkbox" name="tyc" id="tyc"
-                                        style="margin-top:0px;margin-right: 10px;">
-                                    <p class="small" style="display: inline-block">Acepto los <a href="home/tyc"
-                                            target="blank">términos y condiciones </a></p>
-                                </div>
-                                <div class="col-md-5 text-right">
-                                    <button class="btn btn-primary" type="submit">Registrate</button>
-                                </div>
+                            <div class="row">
+                                <label style="clear:none; display:inline-block" for="">
+                                    Fecha de nacimiento(*)</label>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <select name="" id="" class="required form-control error">
+                                                    <option value="">Día</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                    <option value="25">25</option>
+                                                    <option value="26">26</option>
+                                                    <option value="27">27</option>
+                                                    <option value="28">28</option>
+                                                    <option value="29">29</option>
+                                                    <option value="30">30</option>
+                                                    <option value="31">31</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group ">
+                                                <select id="" class="required form-control error">
+                                                    <option value="">Mes</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <select id="año_nacimiento"
+                                                class="required form-control error">
+                                                <option value="">Año</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2012">2012</option>
+                                                <option value="2011">2011</option>
+                                                <option value="2010">2010</option>
+                                                <option value="2009">2009</option>
+                                                <option value="2008">2008</option>
+                                                <option value="2007">2007</option>
+                                                <option value="2006">2006</option>
+                                                <option value="2005">2005</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2001">2001</option>
+                                                <option value="2000">2000</option>
+                                                <option value="1999">1999</option>
+                                                <option value="1998">1998</option>
+                                                <option value="1997">1997</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>País de nacimiento (*)</label> <select id="nacionalidad"
+                                                name="nacionalidad" class="required form-control">
+                                                <option value="1">Argentina</option>
+                                                <option value="18">Afghanistán</option>
+                                                <option value="25">Alemania</option>
+                                                <option value="19">Algeria</option>
+                                                <option value="20">Armenia</option>
+                                                <option value="2">Bolivia</option>
+                                                <option value="3">Brasil</option>
+                                                <option value="4">Chile</option>
+                                                <option value="14">China (República Popular de)</option>
+                                                <option value="5">Colombia</option>
+                                                <option value="13">Corea del Sur</option>
+                                                <option value="21">Costa Rica</option>
+                                                <option value="22">Cuba</option>
+                                                <option value="6">Ecuador</option>
+                                                <option value="30">España</option>
+                                                <option value="33">Estados Unidos</option>
+                                                <option value="24">Francia</option>
+                                                <option value="26">Guyana</option>
+                                                <option value="27">Italia</option>
+                                                <option value="28">México</option>
+                                                <option value="7">Paraguay</option>
+                                                <option value="8">Perú</option>
+                                                <option value="32">Reino Unido</option>
+                                                <option value="23">República Dominicana</option>
+                                                <option value="29">Rusia</option>
+                                                <option value="15">Taiwan</option>
+                                                <option value="31">Ucrania</option>
+                                                <option value="9">Uruguay</option>
+                                                <option value="10">Venezuela</option>
+                                                <option value="17">Otros</option> 
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group spanMailRegister">
+                                                <label for="email2">Correo electrónico*</label>
+                                                <input type="text" id="email2"
+                                                    class="form-control emailJuntos emailPropioJuntos" name="email" required placeholder="Ingresa tu correo electronico ">
+                                                <div class="valid-feedback">Ok</div>
+                                                <div class="invalid-feedback">Ingrese su correo electronico</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group spanMailRegister">
+                                                <label for="email_rep">Repetí tu Correo electrónico*</label>
+                                                <input type="text" id="email_rep" class="form-control" name="email_rep"
+                                                    required placeholder="Ingrese su correo electronico">
+                                                <div class="valid-feedback">Ok</div>
+                                                <div class="invalid-feedback">Ingrese su correo electronico</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3 lg-mb-2 md-mb">
+                                        <div class="col-md-7 mt-1">
+                                            <input type="checkbox" name="tyc" id="tyc" style="margin-top:0px;margin-right: 10px;">
+                                            <p class="small" style="display: inline-block">Acepto los <a href="home/tyc"
+                                                    target="blank">términos y condiciones </a></p>
+                                        </div>
+                                        <div class="col-md-5 text-right ">
+                                            <button class="btn btn-primary" type="submit">Registrate</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>  
                             </div>
                         </div>
 
+                        
                     </div>
-                </form>
-                <!-- -------------------------------- LOGIN ------------------------------- -->
-                <form id="loginForm" class="col-md-4 mt-5 needs-validation" novalidate name="loginForm" method="POST"
-                    action="/registro/login">
-                    <div class="card mt-4">
-                        <div class="card-body pb-2">
-                            <h3 class="font-weight-normal">Ingresá</h3>
-                            <h6>Completá con tu correo y contraseña</h6>
-                            <hr>
-                            <div class="row mt-3">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="username">Correo electrónico*</label>
-                                        <input id="username" name="username" type="text" class="form-control required"
-                                            required tabindex="1">
-                                        <div class="valid-feedback">Ok</div>
-                                        <div class="invalid-feedback">Ingrese su correo</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="password">Contraseña*</label>
-                                        <input type="password" id="password" name="password"
-                                            class="form-control required" required tabindex="2">
-                                        <div class="valid-feedback">Ok</div>
-                                        <div class="invalid-feedback">Ingrese su contraseña</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-3 mb-3">
-                                <div class="col-md-7 mt-2">
-                                    <p class="small"><a href="#" id="btnRecuperar" tabindex="20"
-                                            onclick="mostrarR()">¿Olvidaste tu contraseña?</a></p>
-                                </div>
-                                <div class="col-md-5 text-right">
-                                    <!-- <button type="submit" class="btn btn-primary">Ingresar</button> -->
-                                    <a href="" class="btn btn-primary">Ingresar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <!-- ----------------------------------------------------CARD recuperacion de contraseña------------------------------------ -->
-                <form id="recuperarForm" class="col-md-4 mt-5 rForm" name="recuperarForm" method="POST"
-                    action="/registro/recuperarPassword" style="display: none ;">
-                    <div id="mensajes"></div>
-                    <div class="card mt-5">
-                        <div class="card-body pb-2">
-                            <h3 class="font-weight-normal">Recuperar Contraseña</h3>
-                            <h6>Ingresá tu correo para recibir una nueva contraseña</h6>
-                            <hr>
-                            <div class="row mt-3">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="email">Correo electrónico*</label>
-                                        <input id="email" name="email" type="text"
-                                            class="form-control required emailPropio" required tabindex="1">
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="captchaImageRecuperar">
-                            </div>
-                            <input type="hidden" id="emailCaptcha" name="email" />
-                            <input type="hidden" id="usernameCaptcha" name="username" />
-                            <input type="hidden" id="passwordCaptcha" name="password" />
-                            <input type="hidden" id="captchaSwtch" name="captcha" value="0" />
-                            <div class="row mt-3 mb-3">
-                                <div class="col-md-7 mt-2">
-                                    <p class="small"><a href="#" id="volver" onclick="ocultarR()">Volver al inicio</a>
-                                    </p>
-                                </div>
-                                <div class="col-md-5 text-right">
-                                    <a href="#" class="btn btn-primary" onclick="submitFormRecuperar()">Recuperar</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+
             </div>
+            </form>
+            <!-- -------------------------------- LOGIN ------------------------------- -->
+            <form id="loginForm" class="col-md-4 mt-5 needs-validation" novalidate name="loginForm" method="POST"
+                action="/registro/login" style="display:none ;">
+                <div class="card mt-4">
+                    <div class="card-body pb-2">
+                        <h3 class="font-weight-normal">Ingresá</h3>
+                        <h6>Completá con tu correo y contraseña</h6>
+                        <hr>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="username">Correo electrónico*</label>
+                                    <input id="username" name="username" type="text" class="form-control required"
+                                        required tabindex="1">
+                                    <div class="valid-feedback">Ok</div>
+                                    <div class="invalid-feedback">Ingrese su correo</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="password">Contraseña*</label>
+                                    <input type="password" id="password" name="password" class="form-control required"
+                                        required tabindex="2">
+                                    <div class="valid-feedback">Ok</div>
+                                    <div class="invalid-feedback">Ingrese su contraseña</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-7 mt-2">
+                                <p class="small"><a href="#" id="btnRecuperar" tabindex="20"
+                                        onclick="mostrarR()">¿Olvidaste tu contraseña?</a></p>
+                            </div>
+                            <div class="col-md-5 text-right">
+                                <!-- <button type="submit" class="btn btn-primary">Ingresar</button> -->
+                                <button class="btn btn-primary" ><a href="/paso1.html"></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- ----------------------------------------------------CARD recuperacion de contraseña------------------------------------ -->
+            <form id="recuperarForm" class="col-md-4 mt-5 rForm" name="recuperarForm" method="POST"
+                action="/registro/recuperarPassword" style="display: none ;">
+                <div id="mensajes"></div>
+                <div class="card mt-5">
+                    <div class="card-body pb-2">
+                        <h3 class="font-weight-normal">Recuperar Contraseña</h3>
+                        <h6>Ingresá tu correo para recibir una nueva contraseña</h6>
+                        <hr>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico*</label>
+                                    <input id="email" name="email" type="text" class="form-control required emailPropio"
+                                        required tabindex="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="captchaImageRecuperar">
+                        </div>
+                        <input type="hidden" id="emailCaptcha" name="email" />
+                        <input type="hidden" id="usernameCaptcha" name="username" />
+                        <input type="hidden" id="passwordCaptcha" name="password" />
+                        <input type="hidden" id="captchaSwtch" name="captcha" value="0" />
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-7 mt-2">
+                                <p class="small"><a href="#" id="volver" onclick="ocultarR()">Volver al inicio</a>
+                                </p>
+                            </div>
+                            <div class="col-md-5 text-right">
+                                <a href="#" class="btn btn-primary" onclick="submitFormRecuperar()">Recuperar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
+    </div>
     </div>
     <div class="mb-">
         <footer class="footer mt-auto py-2 bg-dark">
@@ -176,6 +342,7 @@
             </div>
         </footer>
     </div>
+    <script src="/js/validaciones.js"></script>
     <script src="/js/validacionesBs.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/js/animacionesForm.js"></script>
