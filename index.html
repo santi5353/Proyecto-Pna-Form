@@ -14,7 +14,7 @@
 <body class="d-flex flex-column h-100 bg-ligth">
     <!-- -------------------------NAV CON LOGO PNA----------------------------- -->
     <header>
-        <div class="container  " style="display: ;">
+        <div class="container  ">
             <nav class="navbar navbar-expand-md fixed-top bg-white shadow">
                 <div class="container">
                     <a href="#" class="navbar-brand"><img src="/img/descarga.png" width="80px" class=""></a>
@@ -30,44 +30,6 @@
         <div class="mt-5">
             <div class="row">
                 <!-- ----------------------card registro -------------------------- -->
-
-                <form id="registerForm" name="registerForm" method="POST"
-                    class="col-md-8  mt-5 mx-auto  needs-validation" novalidate action="">
-                    <div class="card mt-4 mx-auto">
-                        <div class="card-body mb-2">
-                            <h3 class="font-weight-normal">Registrate</h3>
-                            <h6>Completá con los datos solicitados para poder ingresar</h6>
-                            <hr>
-                            <div class="row mt-3">
-
-                                <!--     Grupo DNI     -->
-                                <div class="col-md-4">
-                                    <div class="form-group nombreSpan">
-                                        <label for="Dni">DNI*</label>
-                                        <div><input type="text" class="form-control " id="dni" name="dni"
-                                            required placeholder="Número de documento">
-                                            <i class="formulario__validacion-estado fas fa-times-circle"></i></div> 
-                                        <div class="valid-feedback">Ok</div>
-                                        <div class="invalid-feedback">Ingrese su DNI</div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="nTramite">N° de tramite*</label>
-                                        <input type="text" class="form-control" id="numTramite" name="numTramite" required placeholder="N° de tramite del Dni">
-                                        <div class="valid-feedback">Ok</div>
-                                        <div class="invalid-feedback">Ingrese su numero de tramite del DNI</div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="ejemplar">Ejemplar*</label>
-                                        <input type="text" class="form-control" id="ejemplar" name="ejemplar" required placeholder="Ejemplar del DNI">
-                                        <div class="valid-feedback">Ok</div>
-                                        <div class="invalid-feedback">Ingrese numero de tramite del Dni</div>
-                                    </div>
-
                 <form action=""id="registerForm" name="registerForm" method="POST"
                 class="col-md-8  mt-5 mx-auto  needs-validation" novalidate action="">
                 <div class="card mt-4 mx-auto">
@@ -76,56 +38,76 @@
                         <h6>Completá con los datos solicitados para poder ingresar</h6>
                         <hr>
                         <div class="row mt-3">
+
+                             <!---------------------- Grupo DNI ---------------------------------->
                             <div class="col-md-6">
-                                <div class="form-group nombreSpan">
-                                    <label for="Dni">DNI*</label>
-                                    <input type="text" class="form-control " id="dni" name="dni" required
-                                        placeholder="Número de documento">
+                                <div class="form-group nombreSpan" id="grupo__dni">
+                                    <label for="Dni" class="formulario__label">DNI*</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="form-control " id="dni" name="dni" required
+                                        placeholder="Número de documento" >
+                                        <i class="formulario__validation-estado fas fa-times-circle "></i>
+                                    </div>
                                     <div class="valid-feedback">Ok</div>
                                     <div class="invalid-feedback">Ingrese su DNI</div>
-
                                 </div>
                             </div>
+
+                               <!---------------------- Grupo sexo -------------------------------->
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="sexo">Sexo*</label>
-                                    <input type="text" class="form-control" id="sexo" name="sexo"
+                                <div class="form-group" id="grupo__sexo">
+                                    <label for="sexo" class="formulario__label">Sexo*</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="form-control" id="sexo" name="sexo"
                                         required placeholder="Sexo que figura en el Dni">
+                                        <i class="formulario__validation-estado fas fa-times-circle "></i>
+                                    </div>
                                     <div class="valid-feedback">Ok</div>
                                     <div class="invalid-feedback">Ingrese su numero de tramite del DNI</div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
+                            <!------------------------- Grupo Apellido------------------------------>
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="apellido">Apellido</label>
-                                    <input type="text" class="form-control" id="apellido" name="apellido" required
+                                <div class="form-group" id="grupo__apellido">
+                                   
+                                    <label for="apellido" class="formulario__label">Apellido</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="form-control" id="apellido" name="apellido" required
                                         placeholder="Apellido">
+                                        <i class="formulario__validation-estado fas fa-times-circle "></i>
+                                    </div>
                                     <div class="valid-feedback">Ok</div>
                                     <div class="invalid-feedback">Ingrese su Apellido</div>
                                 </div>
                             </div>
+                            <!--------------------------- Grupo Nombre------------------------------->
                             <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="nombre">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre" name="nombre" required
+                                <div class="form-group" id="grupo__nombre">
+                                    <label for="nombre" class="formulario__label">Nombre</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" class="form-control" id="nombre" name="nombre" required
                                         placeholder="Nombre">
+                                    <i class="formulario__validation-estado fas fa-times-circle "></i>
+                                    </div>
                                     <div class="valid-feedback">Ok</div>
                                     <div class="invalid-feedback">Ingrese su Nombre</div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
+                            <!----------------------------  Grupo Fecha de nacimiento-------------  -->
                             <div class="col-md-6">
-                                <label style="clear:none; display:inline-block" for="">
+                                <label style="clear:none; display:inline-block" for="" class="formulario__label">
                                     Fecha de nacimiento(*)</label>
                                 <input class="form-control" type="date" id="start" name="trip-start" value=""
                                     min="1997-01-01" max="2004-12-31">
                             </div>
+                            <!--------------------------Grupo pais de nacimiento-------------------- -->
                             <div class="col-md-6">
-                            <div class="form-group">
-                                <label>País de nacimiento (*)</label> <select id="nacionalidad"
+                            <div class="form-group" id="grupo__paisNacimiento">
+                                <label class="formulario_label">País de nacimiento (*)</label> <select id="nacionalidad"
                                     name="nacionalidad" class="required form-control">
                                     <option value="1">Argentina</option>
                                     <option value="18">Afghanistán</option>
@@ -161,21 +143,29 @@
                         </div>
                     </div>
                         <div class="row">
+                            <!--------------------------Grupo correo electronico------------------------>
                             <div class="col-md-6">
-                                <div class="form-group spanMailRegister">
-                                    <label for="email2">Correo electrónico*</label>
-                                    <input type="text" id="email2"
+                                <div class="form-group spanMailRegister" id="grupo__mail">
+                                    <label for="email2" class="formulario__label">Correo electrónico*</label>
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" id="email2"
                                         class="form-control emailJuntos emailPropioJuntos" name="email" required
                                         placeholder="Ingresa tu correo electronico ">
+                                        <i class="formulario__validation-estado fas fa-times-circle "></i>
+                                    </div>
                                     <div class="valid-feedback">Ok</div>
                                     <div class="invalid-feedback">Ingrese su correo electronico</div>
                                 </div>
                             </div>
+                            <!---------------------------Grupo repetir correo---------------------------->
                             <div class="col-md-6">
-                                <div class="form-group spanMailRegister">
+                                <div class="form-group spanMailRegister" id="grupo__remail">
                                     <label for="email_rep">Repetí tu Correo electrónico*</label>
-                                    <input type="text" id="email_rep" class="form-control" name="email_rep" required
+                                    <div class="formulario__grupo-input">
+                                        <input type="text" id="email_rep" class="form-control" name="email_rep" required
                                         placeholder="Ingrese su correo electronico">
+                                        <i class="formulario__validation-estado fas fa-times-circle "></i>
+                                    </div>
                                     <div class="valid-feedback">Ok</div>
                                     <div class="invalid-feedback">Ingrese su correo electronico</div>
                                 </div>
