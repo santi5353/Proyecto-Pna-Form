@@ -1,4 +1,4 @@
-const formulario = document.getElementById('registerForm');
+const formRegister = document.getElementById('registerForm'); 
 const inputs = document.querySelectorAll('#registerForm input');
 
 const expresiones = {
